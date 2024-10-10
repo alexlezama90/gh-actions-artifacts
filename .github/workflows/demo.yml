@@ -43,5 +43,9 @@ jobs:
           name: dist-files
       - name: Output contents
         run: ls
+      - name: Navigate to assets folder
+        run: cd assets
+      - name: List assets folder contents
+        run: ls
       - name: Deploy
         run: echo "Deploying..."
